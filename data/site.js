@@ -1,6 +1,7 @@
 // Site-wide content. Every text field is { en: "...", bn: "..." }.
 window.DATA=window.DATA||{};
 DATA.site={
+ api:"https://script.google.com/macros/s/AKfycbw_wwKTuVGCuUKH_eZmXsnphCt0WTSNNBgEw8DvTrOE683JYIumKoACiAOa3DujZPj6Kw/exec",
  name:{en:"Amdadul Ulom Hafezia Madrasha & Yatimkhana",bn:"এমদাদুল উলুম হাফেজিয়া মাদ্রাসা ও এতিমখানা"},est:1985,
  tagline:{en:"Nurturing curious minds and strong character since 1985.",bn:"১৯৮৫ সাল থেকে জ্ঞান ও চরিত্র গঠনের প্রতিষ্ঠান।"},
  phone:"+880 1731867667",email:"alimctg12345@gmail.com",

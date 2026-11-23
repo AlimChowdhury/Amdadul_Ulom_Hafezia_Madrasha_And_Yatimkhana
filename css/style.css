@@ -21,3 +21,5 @@ body.bn h1,body.bn h2,body.bn .serif{font-family:'Noto Serif Bengali','Playfair 
 @keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 :focus-visible{outline:2px solid #c9a24a;outline-offset:2px}
 @media (prefers-reduced-motion:reduce){.marquee{animation:none;overflow:auto}}
+/* Printing = "Save as PDF" for fee statements and result sheets */
+@media print{body>*:not(main),.noprint,.pagehead{display:none!important}body{background:#fff;font-size:13px}.doc{page-break-after:always;border:0;box-shadow:none}.sec,.sec.bg-white{padding:0;background:#fff}}

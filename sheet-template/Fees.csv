@@ -1,0 +1,6 @@
+id,head,amount,paid,note
+1001,Admission,1000,1000,
+1001,Jan,500,500,
+1001,Feb,500,0,
+1001,Exam,300,300,1st Term
+1001,Other,200,0,Uniform
