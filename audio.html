@@ -1,0 +1,13 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Greenfield Model School</title>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Noto+Serif+Bengali:wght@600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{navy:'#6b1a2a',gold:'#c9a24a',coral:'#8a2234',teal:'#8a6d3b',paper:'#faf3e3'}}}}</script>
+<link rel="stylesheet" href="./css/style.css"></head><body class="bg-paper text-slate-800" data-page="audio"><main><div class="pagehead"><h1 data-i="nav_audio"></h1></div><section id="audio" class="sec"><div id="a-chips" class="flex flex-wrap gap-2 mb-4"></div>
+<div class="grid lg:grid-cols-5 gap-5"><div id="a-list" class="lg:col-span-3 space-y-2"></div>
+<div class="lg:col-span-2 bg-navy text-white rounded-xl p-5 self-start"><p id="a-title" class="font-bold"></p><p id="a-desc" class="text-sm text-slate-300 mb-3"></p>
+<audio id="aud" preload="none"></audio>
+<div class="flex items-center gap-3"><button id="a-play" class="w-11 h-11 rounded-full bg-gold text-navy font-bold" aria-label="Play/Pause">▶</button><input id="a-seek" type="range" min="0" max="100" value="0" class="flex-1 accent-amber-400"><span id="a-time" class="text-xs w-24 text-right">0:00 / 0:00</span></div>
+<div class="flex items-center gap-3 mt-3 text-sm"><select id="a-rate" class="text-navy rounded px-1"><option>0.75</option><option selected>1</option><option>1.25</option><option>1.5</option></select>×<span>🔊</span><input id="a-vol" type="range" min="0" max="1" step=".05" value="1" class="flex-1 accent-amber-400"></div>
+<details class="mt-3 text-sm"><summary class="cursor-pointer" data-i="transcript"></summary><p id="a-tr" class="mt-2 text-slate-300"></p></details>
+<a id="a-dl" download class="inline-block mt-3 text-gold underline text-sm" data-i="download"></a></div></div></section></main><script src="./data/site.js"></script><script src="./data/notices.js"></script><script src="./data/authority.js"></script><script src="./data/teachers.js"></script><script src="./data/careers.js"></script><script src="./data/books.js"></script><script src="./data/audio.js"></script><script src="./js/app.js"></script></body></html>

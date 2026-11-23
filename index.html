@@ -1,0 +1,20 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Greenfield Model School</title>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Noto+Serif+Bengali:wght@600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{navy:'#6b1a2a',gold:'#c9a24a',coral:'#8a2234',teal:'#8a6d3b',paper:'#faf3e3'}}}}</script>
+<link rel="stylesheet" href="./css/style.css"></head><body class="bg-paper text-slate-800" data-page="home"><main><section class="hero relative text-white min-h-[460px] md:min-h-[560px] flex items-center overflow-hidden">
+<img src="./assets/images/hero.jpg" alt="" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+<div class="absolute inset-0 bg-gradient-to-t from-[#2c070e]/90 via-[#4a1019]/60 to-[#4a1019]/40"></div>
+<div class="relative max-w-3xl mx-auto px-4 py-16 text-center"><p class="text-gold font-semibold tracking-wide" id="h-est"></p>
+<h1 class="text-4xl md:text-6xl font-bold mt-3 leading-tight" id="h-title"></h1><div class="mx-auto my-5 w-24 h-1 border-y border-gold"></div>
+<p class="text-lg text-amber-50/90" id="h-sub"></p>
+<div class="mt-8 flex flex-wrap justify-center gap-3"><a href="admission.html" class="btn bg-gold text-navy" data-i="cta_admit"></a><a href="notices.html" class="btn border border-gold text-amber-50" data-i="cta_notice"></a></div></div></section>
+<section class="bg-[#fffaf0] border-b border-gold/50"><div id="home-stats" class="max-w-6xl mx-auto px-4 py-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center"></div></section>
+
+<div class="bg-gold/20 border-y border-gold/40"><div class="max-w-6xl mx-auto px-4 flex items-center gap-3 py-2">
+<b class="text-navy shrink-0" data-i="latest"></b><div class="overflow-hidden flex-1"><div id="ticker" class="marquee"></div></div>
+<button id="tpause" class="text-sm border border-navy/40 rounded px-2 py-0.5" aria-label="Pause ticker">❚❚</button></div></div>
+<section class="sec"><h2 data-i="explore"></h2><div id="home-links" class="grid grid-cols-2 md:grid-cols-5 gap-4"></div></section>
+<section class="sec bg-white"><h2 data-i="nav_notices"></h2><div id="home-notices" class="grid md:grid-cols-3 gap-4"></div><a href="notices.html" class="inline-block mt-4 font-semibold text-coral" data-i="more"></a></section>
+<section class="sec"><h2 data-i="msg_from"></h2><div id="home-msg"></div></section></main><script src="./data/site.js"></script><script src="./data/notices.js"></script><script src="./data/authority.js"></script><script src="./data/teachers.js"></script><script src="./data/careers.js"></script><script src="./data/books.js"></script><script src="./data/audio.js"></script><script src="./js/app.js"></script></body></html>
