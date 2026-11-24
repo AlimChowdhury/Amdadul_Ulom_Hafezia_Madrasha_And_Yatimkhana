@@ -8,3 +8,11 @@
 5. Pages: `fee.html`, `result.html`, `admin.html`. After editing the script, use Deploy -> Manage deployments -> New version.
 PDF: the "Download PDF" button opens the print dialog; choose **Save as PDF**. Admin can filter a class and generate one PDF with every student on its own page.
 Give each guardian a random 6+ digit PIN. Never put student data in the GitHub repo.
+
+## Version 2 additions
+- **Students** tab: add column F `phone` (format column as Plain text). **Fees**: add F `receipt`, G `paid_date`. New tabs **Progress** (id|item|done|total|note) and **Attendance** (id|month|present|total). **Applications** is created automatically by the Apply page.
+- Marks -> grade and GPA are automatic (A+ 80, A 70, A- 60, B 50, C 40, D 33, F below; GPA = average, 0 if any F). Position is calculated per class and exam. Leave `grade` empty to use the automatic grade.
+- Admin page: choose Fee Statement / Result / Admit Card / ID Card, filter a class, then "Generate PDF". WhatsApp reminder appears for students with dues and a phone number.
+- ID card photo (optional): `assets/images/students/<id>.jpg`.
+- Edit `data/donate.js` and `data/routine.js`. Prayer times load from aladhan.com (set `city` and `country` in `data/site.js` if not Dhaka/Bangladesh).
+- After replacing Code.gs: Deploy -> Manage deployments -> Edit -> New version.

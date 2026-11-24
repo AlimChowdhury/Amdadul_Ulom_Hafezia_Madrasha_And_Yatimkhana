@@ -1,25 +1,222 @@
 /* Theme: maroon, cream and antique gold. Serif headings for a formal look.
    Bangla needs taller lines so conjuncts are not clipped. */
-body{font-family:'Source Sans 3','Hind Siliguri',sans-serif;line-height:1.65;font-size:17px}
-body.bn{font-family:'Hind Siliguri','Source Sans 3',sans-serif;line-height:1.85}
-h1,h2,.serif{font-family:'Playfair Display','Noto Serif Bengali',serif}
-body.bn h1,body.bn h2,body.bn .serif{font-family:'Noto Serif Bengali','Playfair Display',serif;line-height:1.6}
-.topbar{background:#3a0c14;color:#f3e6c4}
-.hero{background:radial-gradient(circle at 20% 20%,#8a2234,#4a1019 70%)}
-.pagehead{background:#6b1a2a;color:#fdf3dc;border-bottom:4px double #c9a24a;padding:2.2rem 1rem;text-align:center}.pagehead h1{font-size:2rem;font-weight:700;line-height:1.5}
-.ftr{background:#3a0c14}
-.sec{padding:3.5rem 0}.sec>*{max-width:72rem;margin-inline:auto;padding-inline:1rem}
-.sec.bg-white{background:#f3e8cd}
-.sec>h2{font-size:1.8rem;font-weight:700;color:#6b1a2a;margin-bottom:1.5rem;line-height:1.5}
-.sec>h2::after{content:"";display:block;width:4.5rem;height:5px;margin-top:.4rem;border-block:1px solid #c9a24a}
-.btn{display:inline-block;padding:.65rem 1.5rem;border-radius:2px;font-weight:600;letter-spacing:.02em;transition:background .15s}.btn:hover{filter:brightness(1.08)}
-.inp{border:1px solid #d9c79c;border-radius:2px;padding:.45rem .75rem;background:#fffdf8;color:#2b1d1d}
-.chip{padding:.25rem 1rem;border-radius:2px;border:1px solid #c9a24a;background:#fffdf8;font-size:.9rem;color:#6b1a2a}.chip.on{background:#6b1a2a;color:#fdf3dc;border-color:#6b1a2a}
-.card{background:#fffdf8;border:1px solid #e4d6b8;border-top:3px solid #6b1a2a;border-radius:3px;padding:1rem;transition:box-shadow .2s}.card:hover{box-shadow:0 6px 18px rgba(74,16,25,.15)}
-.tag{font-size:.72rem;font-weight:700;padding:.1rem .5rem;border-radius:2px;background:#f3e6c4;color:#6b1a2a}
-.marquee{display:inline-flex;white-space:nowrap;gap:3rem;animation:mq 40s linear infinite}.marquee.paused{animation-play-state:paused}
-@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-:focus-visible{outline:2px solid #c9a24a;outline-offset:2px}
-@media (prefers-reduced-motion:reduce){.marquee{animation:none;overflow:auto}}
+body {
+   font-family: 'Source Sans 3', 'Hind Siliguri', sans-serif;
+   line-height: 1.65;
+   font-size: 17px
+}
+
+body.bn {
+   font-family: 'Hind Siliguri', 'Source Sans 3', sans-serif;
+   line-height: 1.85
+}
+
+h1,
+h2,
+.serif {
+   font-family: 'Playfair Display', 'Noto Serif Bengali', serif
+}
+
+body.bn h1,
+body.bn h2,
+body.bn .serif {
+   font-family: 'Noto Serif Bengali', 'Playfair Display', serif;
+   line-height: 1.6
+}
+
+.topbar {
+   background: #3a0c14;
+   color: #f3e6c4
+}
+
+.hero {
+   background: radial-gradient(circle at 20% 20%, #8a2234, #4a1019 70%)
+}
+
+.pagehead {
+   background: #6b1a2a;
+   color: #fdf3dc;
+   border-bottom: 4px double #c9a24a;
+   padding: 2.2rem 1rem;
+   text-align: center
+}
+
+.pagehead h1 {
+   font-size: 2rem;
+   font-weight: 700;
+   line-height: 1.5
+}
+
+.ftr {
+   background: #3a0c14
+}
+
+.sec {
+   padding: 3.5rem 0
+}
+
+.sec>* {
+   max-width: 72rem;
+   margin-inline: auto;
+   padding-inline: 1rem
+}
+
+.sec.bg-white {
+   background: #f3e8cd
+}
+
+.sec>h2 {
+   font-size: 1.8rem;
+   font-weight: 700;
+   color: #6b1a2a;
+   margin-bottom: 1.5rem;
+   line-height: 1.5
+}
+
+.sec>h2::after {
+   content: "";
+   display: block;
+   width: 4.5rem;
+   height: 5px;
+   margin-top: .4rem;
+   border-block: 1px solid #c9a24a
+}
+
+.btn {
+   display: inline-block;
+   padding: .65rem 1.5rem;
+   border-radius: 2px;
+   font-weight: 600;
+   letter-spacing: .02em;
+   transition: background .15s
+}
+
+.btn:hover {
+   filter: brightness(1.08)
+}
+
+.inp {
+   border: 1px solid #d9c79c;
+   border-radius: 2px;
+   padding: .45rem .75rem;
+   background: #fffdf8;
+   color: #2b1d1d
+}
+
+.chip {
+   padding: .25rem 1rem;
+   border-radius: 2px;
+   border: 1px solid #c9a24a;
+   background: #fffdf8;
+   font-size: .9rem;
+   color: #6b1a2a
+}
+
+.chip.on {
+   background: #6b1a2a;
+   color: #fdf3dc;
+   border-color: #6b1a2a
+}
+
+.card {
+   background: #fffdf8;
+   border: 1px solid #e4d6b8;
+   border-top: 3px solid #6b1a2a;
+   border-radius: 3px;
+   padding: 1rem;
+   transition: box-shadow .2s
+}
+
+.card:hover {
+   box-shadow: 0 6px 18px rgba(74, 16, 25, .15)
+}
+
+.tag {
+   font-size: .72rem;
+   font-weight: 700;
+   padding: .1rem .5rem;
+   border-radius: 2px;
+   background: #f3e6c4;
+   color: #6b1a2a
+}
+
+.marquee {
+   display: inline-flex;
+   white-space: nowrap;
+   gap: 3rem;
+   animation: mq 40s linear infinite
+}
+
+.marquee.paused {
+   animation-play-state: paused
+}
+
+@keyframes mq {
+   from {
+      transform: translateX(0)
+   }
+
+   to {
+      transform: translateX(-50%)
+   }
+}
+
+:focus-visible {
+   outline: 2px solid #c9a24a;
+   outline-offset: 2px
+}
+
+@media (prefers-reduced-motion:reduce) {
+   .marquee {
+      animation: none;
+      overflow: auto
+   }
+}
+
 /* Printing = "Save as PDF" for fee statements and result sheets */
-@media print{body>*:not(main),.noprint,.pagehead{display:none!important}body{background:#fff;font-size:13px}.doc{page-break-after:always;border:0;box-shadow:none}.sec,.sec.bg-white{padding:0;background:#fff}}
+@media print {
+
+   body>*:not(main),
+   .noprint,
+   .pagehead {
+      display: none !important
+   }
+
+   body {
+      background: #fff;
+      font-size: 13px
+   }
+
+   .doc {
+      page-break-after: always;
+      border: 0;
+      box-shadow: none
+   }
+
+   .sec,
+   .sec.bg-white {
+      padding: 0;
+      background: #fff
+   }
+}
+
+details>summary {
+   list-style: none
+}
+
+details>summary::-webkit-details-marker {
+   display: none
+}
+
+@media print {
+
+   .doc *,
+   .idc * {
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact
+   }
+
+   .idc {
+      break-inside: avoid
+   }
+}
