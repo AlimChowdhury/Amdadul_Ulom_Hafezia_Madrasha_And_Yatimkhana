@@ -20,4 +20,4 @@ Every text is `{ en: "...", bn: "..." }`. Keep commas and quotes intact.
 ## Pages & home photo
 One HTML file per section: `index.html` (home), `notices.html`, `about.html`, `authority.html`, `teachers.html`, `careers.html`, `library.html`, `audio.html`, `admission.html` (includes the calendar), `gallery.html`, `contact.html`. Header, footer and language switch are shared and built by `js/app.js`.
 **Home photo:** upload your school photo as `assets/images/hero.jpg` (landscape, ~1600×1200). Until then a drawing is shown.
-**Colours:** maroon `#6b1a2a`, antique gold `#c9a24a`, cream `#faf3e3`. Change the `tailwind.config` line in each page and the hex values in `css/style.css`.
+**Colours:** maroon `#166534`, antique gold `#ffffff`, cream `#ffffff`. Change the `tailwind.config` line in each page and the hex values in `css/style.css`.

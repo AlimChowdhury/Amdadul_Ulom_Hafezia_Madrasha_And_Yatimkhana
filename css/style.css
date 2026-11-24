@@ -25,18 +25,18 @@ body.bn .serif {
 }
 
 .topbar {
-   background: #3a0c14;
-   color: #f3e6c4
+   background: #14532d;
+   color: #dcfce7
 }
 
 .hero {
-   background: radial-gradient(circle at 20% 20%, #8a2234, #4a1019 70%)
+   background: radial-gradient(circle at 20% 20%, #15803d, #14532d 70%)
 }
 
 .pagehead {
-   background: #6b1a2a;
-   color: #fdf3dc;
-   border-bottom: 4px double #c9a24a;
+   background: #166534;
+   color: #ffffff;
+   border-bottom: 4px double #ffffff;
    padding: 2.2rem 1rem;
    text-align: center
 }
@@ -48,7 +48,7 @@ body.bn .serif {
 }
 
 .ftr {
-   background: #3a0c14
+   background: #14532d
 }
 
 .sec {
@@ -62,13 +62,13 @@ body.bn .serif {
 }
 
 .sec.bg-white {
-   background: #f3e8cd
+   background: #ffffff
 }
 
 .sec>h2 {
    font-size: 1.8rem;
    font-weight: 700;
-   color: #6b1a2a;
+   color: #166534;
    margin-bottom: 1.5rem;
    line-height: 1.5
 }
@@ -79,7 +79,7 @@ body.bn .serif {
    width: 4.5rem;
    height: 5px;
    margin-top: .4rem;
-   border-block: 1px solid #c9a24a
+   border-block: 1px solid #ffffff
 }
 
 .btn {
@@ -96,32 +96,32 @@ body.bn .serif {
 }
 
 .inp {
-   border: 1px solid #d9c79c;
+   border: 1px solid #bbf7d0;
    border-radius: 2px;
    padding: .45rem .75rem;
-   background: #fffdf8;
+   background: #ffffff;
    color: #2b1d1d
 }
 
 .chip {
    padding: .25rem 1rem;
    border-radius: 2px;
-   border: 1px solid #c9a24a;
-   background: #fffdf8;
+   border: 1px solid #ffffff;
+   background: #ffffff;
    font-size: .9rem;
-   color: #6b1a2a
+   color: #166534
 }
 
 .chip.on {
-   background: #6b1a2a;
-   color: #fdf3dc;
-   border-color: #6b1a2a
+   background: #166534;
+   color: #ffffff;
+   border-color: #166534
 }
 
 .card {
-   background: #fffdf8;
-   border: 1px solid #e4d6b8;
-   border-top: 3px solid #6b1a2a;
+   background: #ffffff;
+   border: 1px solid #d1fae5;
+   border-top: 3px solid #166534;
    border-radius: 3px;
    padding: 1rem;
    transition: box-shadow .2s
@@ -136,8 +136,8 @@ body.bn .serif {
    font-weight: 700;
    padding: .1rem .5rem;
    border-radius: 2px;
-   background: #f3e6c4;
-   color: #6b1a2a
+   background: #dcfce7;
+   color: #166534
 }
 
 .marquee {
@@ -162,7 +162,7 @@ body.bn .serif {
 }
 
 :focus-visible {
-   outline: 2px solid #c9a24a;
+   outline: 2px solid #ffffff;
    outline-offset: 2px
 }
 

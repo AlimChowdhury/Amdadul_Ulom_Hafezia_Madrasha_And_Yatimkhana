@@ -8,7 +8,7 @@
   const MO = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'], ORD = ['Admission', ...MO, 'Exam'];
   const BN = { Admission: 'ভর্তি ফি', Jan: 'জানুয়ারি', Feb: 'ফেব্রুয়ারি', Mar: 'মার্চ', Apr: 'এপ্রিল', May: 'মে', Jun: 'জুন', Jul: 'জুলাই', Aug: 'আগস্ট', Sep: 'সেপ্টেম্বর', Oct: 'অক্টোবর', Nov: 'নভেম্বর', Dec: 'ডিসেম্বর', Exam: 'পরীক্ষা ফি' };
   const hn = h => lang === 'bn' && BN[h] || h, dueOf = s => s.fees.reduce((a, r) => a + (+r[1] || 0) - (+r[2] || 0), 0);
-  const td = (x, c = '') => `<td class="border border-slate-300 px-2 py-1 ${c}">${x}</td>`, th = x => `<th class="border border-slate-400 px-2 py-1 text-left bg-[#f3e8cd]">${t(x)}</th>`;
+  const td = (x, c = '') => `<td class="border border-slate-300 px-2 py-1 ${c}">${x}</td>`, th = x => `<th class="border border-slate-400 px-2 py-1 text-left bg-[#ffffff]">${t(x)}</th>`;
   const top = (s, title) => `<div class="text-center border-b-2 border-double border-gold pb-3 mb-4"><div class="serif text-2xl font-bold text-navy">${e(L(S.name))}</div><div class="text-sm">${e(L(S.address))}</div></div><h3 class="serif text-xl font-bold text-center mb-3">${title}</h3><div class="grid grid-cols-2 gap-1 text-sm mb-4"><div>${t('name')}: <b>${e(s.name)}</b></div><div>ID: <b>${e(s.id)}</b></div><div>${t('cls')}: <b>${e(s.class)}</b></div><div>${t('date')}: ${new Date().toLocaleDateString('en-GB')}</div></div>`;
   const GP = (m, f) => { const p = f ? m / f * 100 : 0; return p >= 80 ? ['A+', 5] : p >= 70 ? ['A', 4] : p >= 60 ? ['A-', 3.5] : p >= 50 ? ['B', 3] : p >= 40 ? ['C', 2] : p >= 33 ? ['D', 1] : ['F', 0] };
   let RC = [];
