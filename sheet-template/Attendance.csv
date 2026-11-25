@@ -1,3 +1,2 @@
-id,month,present,total
-1001,Jan,22,24
-1001,Feb,20,22
+id,month,present,total,entered_by,entered_at
+1001,Jan,22,24,Teacher: Maulana Karim (T01),2026-02-01 09:00

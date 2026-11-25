@@ -19,3 +19,12 @@ Give each guardian a random 6+ digit PIN. Never put student data in the GitHub r
 
 ## Version 3: one Login page (portal.html)
 Student, Teacher and Admin log in on `portal.html`. Teachers need a **Teachers** tab (id|pin|name|designation|class|phone|subject); their `class` must match the Students `class` text exactly. Teachers can view their class fees/results and enter marks (exam, subject, full marks) and attendance (month, total days); saving updates or adds rows in Results / Attendance. After replacing Code.gs: Deploy -> Manage deployments -> Edit -> New version. Old fee.html / result.html / admin.html still work but are no longer in the menu.
+
+## Version 4: teachers with many classes and subjects, plus audit trail
+- **Teachers** tab: `id | pin | name | designation | phone` (headings are matched by name, extra columns are ignored).
+- **Assignments** tab (new): `teacher_id | class | subject`, one row for every class + subject a teacher teaches. A teacher may have many rows, different subjects in different classes. Class text must match the Students `class` text exactly.
+- A teacher sees and enters marks only for assigned class + subject pairs; attendance only for assigned classes. The server rejects anything else.
+- **Admin** can also enter marks and attendance for any class and subject (portal -> Admin -> Enter marks / Attendance).
+- **Audit:** add headings `entered_by`, `entered_at` to the end of **Results** (G, H) and **Attendance** (E, F). Every save fills them (for example `Teacher: Maulana Karim (T01)`). A separate **AuditLog** tab (created automatically) keeps one line for every save: time, role, user, action, class, exam/subject or month, rows saved.
+- Data lives in your Google Sheet. For an Excel copy: File -> Download -> Microsoft Excel (.xlsx).
+- After replacing Code.gs: Deploy -> Manage deployments -> Edit -> New version.

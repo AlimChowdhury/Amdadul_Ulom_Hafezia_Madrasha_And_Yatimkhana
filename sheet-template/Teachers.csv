@@ -1,2 +1,3 @@
-id,pin,name,designation,class,phone,subject
-T01,T01,Maulana Karim,Assistant Teacher,Hifz,01700000000,Quran
+id,pin,name,designation,phone
+T01,654321,Maulana Karim,Assistant Teacher,01700000000
+T02,112233,Rahima Begum,Teacher,01800000000
