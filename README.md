@@ -1,4 +1,4 @@
-# Amdadul_Ulom_Hafezia_Madrasha_And_Yatimkhana Website (GitHub Pages)
+# Amdadul Ulom Hafezia Madrasha & Yatimkhana Website (GitHub Pages)
 
 Static site: HTML + Tailwind (CDN) + vanilla JS. No build step, no server.
 
