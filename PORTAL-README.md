@@ -16,3 +16,6 @@ Give each guardian a random 6+ digit PIN. Never put student data in the GitHub r
 - ID card photo (optional): `assets/images/students/<id>.jpg`.
 - Edit `data/donate.js` and `data/routine.js`. Prayer times load from aladhan.com (set `city` and `country` in `data/site.js` if not Dhaka/Bangladesh).
 - After replacing Code.gs: Deploy -> Manage deployments -> Edit -> New version.
+
+## Version 3: one Login page (portal.html)
+Student, Teacher and Admin log in on `portal.html`. Teachers need a **Teachers** tab (id|pin|name|designation|class|phone|subject); their `class` must match the Students `class` text exactly. Teachers can view their class fees/results and enter marks (exam, subject, full marks) and attendance (month, total days); saving updates or adds rows in Results / Attendance. After replacing Code.gs: Deploy -> Manage deployments -> Edit -> New version. Old fee.html / result.html / admin.html still work but are no longer in the menu.

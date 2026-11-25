@@ -1,0 +1,14 @@
+/* Mobile-first improvements + full-width notice list. No colours here, so it works with any theme. */
+#n-list{display:flex!important;flex-direction:column;gap:.75rem}
+#drawer a{padding:.55rem 0}
+.doc{overflow-x:auto}
+@media(max-width:639px){
+ body{font-size:16px}.sec{padding:2rem 0}.sec>h2{font-size:1.5rem}
+ .inp{font-size:16px;width:100%}.btn{min-height:44px}
+ #n-chips,#t-chips,#a-chips{flex-wrap:nowrap!important;overflow-x:auto;width:100%;padding-bottom:.25rem}.chip{white-space:nowrap;flex-shrink:0}
+ .pagehead{padding:1.5rem 1rem}.pagehead h1{font-size:1.5rem}
+ .doc{padding:.75rem}.doc table{min-width:480px}
+ .hero{min-height:380px!important}
+}
+@media(max-width:767px){body{padding-bottom:4rem}}
+@media print{.doc{overflow:visible!important}.doc table{min-width:0}}
